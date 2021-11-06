@@ -1,0 +1,175 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+*/
+.titulo{
+    color: rgb(255, 255, 255);
+    /*font-family: cursive;*/
+    font-size: 400%;
+    text-align: center;
+    align-content: center;
+    text-decoration-color: blue;
+}
+
+.parrafo{
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 47, 61,0.2) ; 
+    font-family: sans-serif;
+    font-size:2em;
+    text-align: center;
+    display: inline-block;
+    position: sticky;
+}
+.nada{
+    background-color: rgb(255,255,255,0.0)
+    padding: 20px 35px;
+}
+.imagen{
+  background-image: url("../img/fondo2.jpg");
+  
+}
+a:link, a:visited {
+  background-color: rgb(75, 121, 253,0.2);
+  color: white;
+ padding: 10px 25px;
+ font-size: 200%;
+ background-position: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+a:hover, a:active {
+  background-color: rgb(51, 255, 233,0.6);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 16px;
+    background-image: url(img/3146101.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.navegacion{
+    display: flex;
+    list-style: none;
+    position: relative;
+    align-items: center;
+    /*background: rgba(29, 33, 61, 0.5);*/
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 50px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.nav-menu li a:hover {
+    /*border-bottom: 2px solid #fff;*/
+    color: #CE7D35;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+
+ul {
+    flex: 1;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+} 
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px;
+}
+
+hr{
+    margin: 10px 0px 30px;
+    color: #fff;
+}
+
+
+.info p,
+.info h3 {
+    color: #fff;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-init  img{
+    margin: 10px 15px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.navegacion ul.nav-menu{
+    flex: 1;
+    margin-left: 30px;
+}
+
+/*
+    SUB MENU
+*/
+
+.submenu{
+    position: absolute;
+    background: #fff;
+    width: 120px;
+    display: none;
+}
+
+.submenu li a{
+    display: block;
+    padding: 25px;
+    color: #000;
+    text-decoration: none;
+}
+
+#divicion{
+    margin-left: -60px;
+    color: #000;
+}
+.nav-menu li:hover .submenu{
+    display: block;
+}
